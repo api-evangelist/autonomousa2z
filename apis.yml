@@ -1,23 +1,76 @@
 aid: autonomousa2z
+
 name: Autonomousa2z
-description: 'Autonomousa2z is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.imweb.me/upload/S202309086909876845cbd/e570b54cfe754.png
+
+description: Autonomous A2Z is an autonomous driving solution provider focused on enabling future mobility through advanced AI, LiDAR, and safety
+  systems. The company offers a suite of services including autonomous shuttles, delivery robots, and smart city integration, with operations
+  in Korea and expanding globally. Their mission is to create safe, reliable, and scalable autonomous transportation for all.
+
 url: https://raw.githubusercontent.com/api-evangelist/autonomousa2z/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Autonomous Vehicles
+- AI
+- Mobility
+- Korea
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/autonomousa2z-hosts.yml
+- type: Vendors
+  url: vendors/autonomousa2z-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.autoa2z.ai/privacy
+- type: Newsroom
+  url: https://www.autoa2z.ai/News
+- type: DomainSecurity
+  url: security/autonomousa2z-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/autonomousa2z
+  url: https://www.autoa2z.ai
+- type: Documentation
+  url: https://www.autoa2z.ai/company
+- type: Contact
+  url: https://www.autoa2z.ai/Contact
+
+apis:
+- name: Autonomousa2z API
+  description: Autonomousa2z offers autonomous vehicle and mobility services; API details are not publicly machine‑readable.
+  humanURL: https://www.autoa2z.ai/company
+  aid: autonomousa2z:autonomousa2z-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Company docs are rendered via JavaScript and no machine‑readable spec was found.
+  evidence:
+  - url: https://www.autoa2z.ai/company
+    status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

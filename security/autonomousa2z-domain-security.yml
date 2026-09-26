@@ -1,0 +1,15 @@
+generated: '2026-09-26'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.autoa2z.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar 31 23:59:59 2027 GMT
+  hsts: false
+domains:
+- domain: autoa2z.ai
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
